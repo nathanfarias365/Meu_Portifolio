@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" role="img" aria-labelledby="title description">
+  <title id="title">Gatinho kawaii original</title>
+  <desc id="description">Ilustração de um gatinho branco sorridente em um jardim rosa pastel.</desc>
+  <defs>
+    <linearGradient id="background" x2="0" y2="1">
+      <stop stop-color="#ffe8f2"/>
+      <stop offset="1" stop-color="#f8bfd7"/>
+    </linearGradient>
+    <linearGradient id="fur" x2=".8" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff5fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-.3" y="-.3" width="1.6" height="1.7">
+      <feDropShadow dx="0" dy="14" stdDeviation="13" flood-color="#b35c85" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <rect width="600" height="700" fill="url(#background)"/>
+  <circle cx="92" cy="145" r="44" fill="#fff" opacity=".34"/>
+  <circle cx="503" cy="255" r="72" fill="#fff" opacity=".27"/>
+  <path d="M0 535c98-58 172-41 258-8s190 48 342-19v192H0z" fill="#f3a9cb"/>
+  <path d="M74 614c84-35 142-34 210 2m99 5c53-29 97-28 145 2" fill="none" stroke="#fff4fa" stroke-linecap="round" stroke-width="12" opacity=".74"/>
+  <g fill="#fff" opacity=".9">
+    <path d="m122 302 15-27 15 27 27 15-27 15-15 27-15-27-27-15z"/>
+    <path d="m475 390 10-19 10 19 19 10-19 10-10 19-10-19-19-10z"/>
+    <circle cx="443" cy="132" r="7"/>
+    <circle cx="168" cy="420" r="6"/>
+  </g>
+  <g filter="url(#shadow)">
+    <path d="M166 300 183 130q3-27 27-10l94 71 91-71q23-18 28 10l13 171c12 33 17 70 17 112 0 119-63 177-153 177S147 531 147 412c0-42 6-79 19-112Z" fill="url(#fur)" stroke="#d88bad" stroke-width="8"/>
+    <path d="m201 159 75 55-84 61zM404 159l-72 55 82 61z" fill="#f6afcf"/>
+    <ellipse cx="227" cy="373" rx="20" ry="28" fill="#67515e"/>
+    <ellipse cx="373" cy="373" rx="20" ry="28" fill="#67515e"/>
+    <circle cx="220" cy="363" r="6" fill="#fff"/>
+    <circle cx="366" cy="363" r="6" fill="#fff"/>
+    <ellipse cx="165" cy="424" rx="31" ry="17" fill="#f7bad3" opacity=".65"/>
+    <ellipse cx="435" cy="424" rx="31" ry="17" fill="#f7bad3" opacity=".65"/>
+    <path d="m292 401 8 7 8-7q9 0 8 8-1 7-16 17-15-10-16-17-1-8 8-8z" fill="#de83a9"/>
+    <path d="M300 426v8m0 0q-17 20-32 1m32-1q17 20 32 1" fill="none" stroke="#9e687f" stroke-linecap="round" stroke-width="6"/>
+    <path d="M150 390h75m-76 21h73m153-21h75m-73 21h75" fill="none" stroke="#c28aa3" stroke-linecap="round" stroke-width="4"/>
+  </g>
+  <text x="300" y="661" fill="#8f4d6c" font-family="sans-serif" font-size="19" font-weight="700" letter-spacing="5" text-anchor="middle">UM POUCO DE DOÇURA</text>
+</svg>

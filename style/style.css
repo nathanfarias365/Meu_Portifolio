@@ -878,6 +878,188 @@ p {
     border-color: rgba(69, 231, 226, 0.48);
 }
 
+.project-dialog,
+.project-prompt-dialog {
+    margin: auto;
+    max-width: none;
+    max-height: calc(100dvh - 32px);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--text);
+}
+
+.project-dialog {
+    width: min(920px, calc(100vw - 32px));
+}
+
+.project-prompt-dialog {
+    width: min(620px, calc(100vw - 32px));
+}
+
+.project-dialog[open],
+.project-prompt-dialog[open] {
+    display: grid;
+    place-items: center;
+}
+
+.project-dialog::backdrop,
+.project-prompt-dialog::backdrop {
+    background: rgba(3, 8, 14, 0.78);
+    backdrop-filter: blur(7px);
+}
+
+.project-dialog-card,
+.project-prompt-card {
+    position: relative;
+    max-height: calc(100dvh - 32px);
+    overflow: auto;
+    border: 1px solid rgba(69, 231, 226, 0.28);
+    background: linear-gradient(145deg, rgba(13, 23, 34, 0.99), rgba(7, 11, 19, 0.99));
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+    animation: project-dialog-enter 280ms var(--ease-smooth);
+}
+
+.project-dialog-card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+}
+
+.project-dialog-media {
+    min-height: 420px;
+    background: #101d2a;
+}
+
+.project-dialog-media .project-image {
+    height: 100%;
+    min-height: 420px;
+}
+
+.project-dialog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 42px 32px;
+}
+
+.project-dialog-type {
+    margin-bottom: 4px;
+}
+
+.project-dialog-content h2,
+.project-prompt-card h2 {
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1.2;
+}
+
+.project-dialog-status {
+    margin-bottom: 3px;
+}
+
+.project-dialog-description {
+    margin-top: 13px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.project-dialog-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.project-action {
+    display: inline-flex;
+    min-height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border: 1px solid rgba(69, 231, 226, 0.34);
+    background: rgba(69, 231, 226, 0.07);
+    color: var(--cyan);
+    cursor: pointer;
+    font: 10px var(--mono);
+    text-align: center;
+    transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.project-action:hover:not([aria-disabled="true"]) {
+    transform: translateY(-2px);
+    border-color: var(--cyan);
+    background: rgba(69, 231, 226, 0.14);
+}
+
+.project-action[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+.project-dialog-close {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    right: 12px;
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border: 1px solid var(--line);
+    background: rgba(7, 11, 19, 0.82);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 1;
+    transition: border-color 180ms ease, color 180ms ease;
+}
+
+.project-dialog-close:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+}
+
+.project-prompt-card {
+    width: 100%;
+    padding: 38px;
+}
+
+.project-prompt-kicker {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--cyan);
+    font: 9px var(--mono);
+    letter-spacing: 0.1em;
+}
+
+.project-prompt-text {
+    max-height: min(55vh, 480px);
+    overflow: auto;
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    background: rgba(7, 11, 19, 0.72);
+    color: var(--text);
+    font: 12px/1.8 var(--mono);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@keyframes project-dialog-enter {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.985);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .project-image {
     position: relative;
     display: block;
@@ -898,6 +1080,20 @@ p {
     height: 100%;
     object-fit: cover;
     transition: transform 550ms var(--ease-smooth);
+}
+
+.project-image-slot:not([src]) {
+    display: none;
+}
+
+.project-image-slot[src] {
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+}
+
+.project-image-slot[src] ~ .project-placeholder-icon {
+    display: none;
 }
 
 .project-card:hover .project-image img {
@@ -2002,6 +2198,39 @@ html.scroll-reveal-enabled .knowledge-item.is-visible .knowledge-bar-fill {
 
     .project-info p {
         min-height: 0;
+    }
+
+    .project-dialog,
+    .project-prompt-dialog {
+        max-height: calc(100dvh - 20px);
+    }
+
+    .project-dialog-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-dialog-media,
+    .project-dialog-media .project-image {
+        height: clamp(165px, 30vh, 225px);
+        min-height: 0;
+    }
+
+    .project-dialog-content {
+        padding: 28px 20px 22px;
+    }
+
+    .project-dialog-actions {
+        gap: 6px;
+        margin-top: 20px;
+    }
+
+    .project-action {
+        padding: 8px 5px;
+        font-size: 9px;
+    }
+
+    .project-prompt-card {
+        padding: 34px 20px 20px;
     }
 
     .skill-card {

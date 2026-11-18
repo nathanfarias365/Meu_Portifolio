@@ -172,6 +172,36 @@ button {
     gap: 5px;
 }
 
+.nav-group {
+    display: grid;
+    gap: 4px;
+}
+
+.nav-subnav {
+    display: grid;
+    gap: 3px;
+    max-height: 0;
+    margin: 0 0 0 20px;
+    overflow: hidden;
+    padding-left: 9px;
+    border-left: 1px solid var(--line);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-5px);
+    visibility: hidden;
+    transition: max-height 300ms var(--ease-smooth), opacity 200ms ease, transform 300ms var(--ease-smooth), visibility 0s linear 300ms;
+}
+
+.nav-group.is-projects-visible .nav-subnav {
+    max-height: 124px;
+    margin: 4px 0 3px 20px;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    visibility: visible;
+    transition-delay: 0s;
+}
+
 .nav-link {
     position: relative;
     display: flex;
@@ -183,6 +213,13 @@ button {
     color: var(--muted);
     font-size: 13px;
     transition: color 260ms ease, background 260ms ease, border-color 260ms ease;
+}
+
+.nav-link--sub {
+    min-height: 36px;
+    gap: 8px;
+    padding: 0 8px;
+    font-size: 11px;
 }
 
 .nav-link:hover,
@@ -208,6 +245,11 @@ button {
     color: inherit;
     font-size: 18px;
     text-align: center;
+}
+
+.nav-link--sub .nav-icon {
+    width: 14px;
+    font-size: 13px;
 }
 
 .nav-index {
@@ -660,6 +702,28 @@ p {
     font-weight: 500;
     letter-spacing: -0.055em;
     line-height: 1.2;
+}
+
+.project-category {
+    margin-top: 42px;
+}
+
+.project-category-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--line);
+}
+
+.project-category-heading h3 {
+    margin: 0;
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
 }
 
 .section-code {

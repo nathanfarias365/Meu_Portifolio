@@ -25,7 +25,14 @@
         <nav class="side-nav" aria-label="Navegação principal">
             <a class="nav-link active" href="#inicio"><span class="nav-icon">⌂</span>Início<span class="nav-index">01</span></a>
             <a class="nav-link" href="#sobre"><span class="nav-icon">◈</span>Sobre mim<span class="nav-index">02</span></a>
-            <a class="nav-link" href="#projetos"><span class="nav-icon">▤</span>Projetos<span class="nav-index">03</span></a>
+            <div class="nav-group">
+                <a class="nav-link" href="#projetos"><span class="nav-icon">▤</span>Projetos<span class="nav-index">03</span></a>
+                <div class="nav-subnav" role="group" aria-label="Categorias de projetos" aria-hidden="true">
+                    <a class="nav-link nav-link--sub" href="#web-design"><span class="nav-icon" aria-hidden="true">↳</span>Web designer</a>
+                    <a class="nav-link nav-link--sub" href="#web-system"><span class="nav-icon" aria-hidden="true">↳</span>Sistema web</a>
+                    <a class="nav-link nav-link--sub" href="#web-tools"><span class="nav-icon" aria-hidden="true">↳</span>Ferramenta web</a>
+                </div>
+            </div>
             <a class="nav-link" href="#habilidades"><span class="nav-icon">⌘</span>Habilidades<span class="nav-index">04</span></a>
             <a class="nav-link" href="#contato"><span class="nav-icon">✉</span>Contato<span class="nav-index">05</span></a>
         </nav>
@@ -108,69 +115,92 @@
         <section class="projects section-shell" id="projetos">
             <div class="section-heading scroll-reveal">
                 <div><span class="section-kicker">02 / TRABALHOS SELECIONADOS</span><h2>Projetos em <span class="gradient-text">destaque.</span></h2></div>
-                <span class="section-code">[ 12 ITEMS FOUND ]</span>
+                <span class="section-code">[ 15 ITEMS FOUND ]</span>
             </div>
-            <div class="project-grid" tabindex="0" aria-label="Projetos em destaque. Arraste ou use as setas para navegar.">
-                <article class="project-card">
-                    <a class="project-image" href="#contato" aria-label="Conheça o projeto Site empresarial">
-                        <img src="img/site%20empresarial.jpg" alt="Apresentação responsiva de um site de empresarial">
-                        <span class="project-number">PROJECT_01</span><span class="project-open">↗</span>
-                    </a>
-                    <div class="project-info"><div class="project-type">WEB DESIGN <span>01 — 12</span></div><span class="project-status project-status--development">Desenvolvimento</span><h3>Site empresarial</h3><p>Uma experiência digital responsiva com foco em apresentação visual e navegação intuitiva simples.</p><div class="tag-list"><span>UI DESIGN</span><span>RESPONSIVO</span></div></div>
-                </article>
-                <article class="project-card">
-                    <a class="project-image project-image--school" href="#contato" aria-label="Conheça o projeto">
-                        <img src="img/justitia.png" alt="Interface de uma plataforma para gestão juridica">
-                        <span class="project-number">PROJECT_02</span><span class="project-open">↗</span>
-                    </a>
-                    <div class="project-info"><div class="project-type">SISTEMA WEB <span>02 — 12</span></div><span class="project-status project-status--development">Desenvolvimento</span><h3>Justitia Pilot</h3><p>Ferramenta para gestão, organização e acompanhamento da atividade jurídica.</p><div class="tag-list"><span>SISTEMA</span><span>PRODUTIVIDADE</span></div></div>
-                </article>
-                <article class="project-card">
-                    <a class="project-image project-image--microsoft" href="#contato" aria-label="Conheça o projeto">
-                        <img src="img/corretor ortografico.png" alt="ferramenta de ortografia">
-                        <span class="project-number">PROJECT_03</span><span class="project-open">↗</span>
-                    </a>
-                    <div class="project-info"><div class="project-type">FERRAMENTA WEB <span>03 — 12</span></div><span class="project-status project-status--development">Desenvolvimento</span><h3>corretor ortográficos</h3><p>Ferramentas de produtividade, avaliação e auxilio ortografico. teste feito para integraçao em justitia pilot</p><div class="tag-list"><span>FERRAMENTA</span><span>INTEGRAÇÃO</span></div></div>
-                </article>
-                <!-- Para mudar o status de um card, edite o texto e a classe project-status--...: --discarded (vermelho), --development (amarelo), --finished (verde) ou --inactive (cinza). -->
-                <!-- Personalize os próximos cards aqui: troque título, descrição, categoria, tags e adicione uma imagem para cada projeto. -->
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_04</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>04 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_05</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>05 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_06</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>06 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_07</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>07 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_08</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>08 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_09</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>09 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_10</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>10 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_11</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>11 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-                <article class="project-card project-card--empty">
-                    <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_12</span><span class="project-placeholder-icon">+</span></div>
-                    <div class="project-info"><div class="project-type">NOVO PROJETO <span>12 — 12</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
-                </article>
-            </div>
+            <section class="project-category" id="web-design" aria-labelledby="web-design-title">
+                <div class="project-category-heading"><h3 id="web-design-title">Web designer</h3></div>
+                <div class="project-grid" tabindex="0" aria-label="Projetos de web design. Arraste ou use as setas para navegar.">
+                    <article class="project-card">
+                        <a class="project-image" href="#contato" aria-label="Conheça o projeto Site empresarial">
+                            <img src="img/site%20empresarial.jpg" alt="Apresentação responsiva de um site empresarial">
+                            <span class="project-number">PROJECT_01</span><span class="project-open">↗</span>
+                        </a>
+                        <div class="project-info"><div class="project-type">WEB DESIGN <span>01 — 05</span></div><span class="project-status project-status--development">Desenvolvimento</span><h3>Site empresarial</h3><p>Uma experiência digital responsiva com foco em apresentação visual e navegação intuitiva simples.</p><div class="tag-list"><span>UI DESIGN</span><span>RESPONSIVO</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_02</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">WEB DESIGN <span>02 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_03</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">WEB DESIGN <span>03 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_04</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">WEB DESIGN <span>04 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_05</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">WEB DESIGN <span>05 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                </div>
+            </section>
+            <section class="project-category" id="web-system" aria-labelledby="web-system-title">
+                <div class="project-category-heading"><h3 id="web-system-title">Sistema web</h3></div>
+                <div class="project-grid" tabindex="0" aria-label="Projetos de sistema web. Arraste ou use as setas para navegar.">
+                    <article class="project-card">
+                        <a class="project-image project-image--school" href="#contato" aria-label="Conheça o projeto Justitia Pilot">
+                            <img src="img/justitia.png" alt="Interface de uma plataforma para gestão jurídica">
+                            <span class="project-number">PROJECT_06</span><span class="project-open">↗</span>
+                        </a>
+                        <div class="project-info"><div class="project-type">SISTEMA WEB <span>01 — 05</span></div><span class="project-status project-status--development">Desenvolvimento</span><h3>Justitia Pilot</h3><p>Ferramenta para gestão, organização e acompanhamento da atividade jurídica.</p><div class="tag-list"><span>SISTEMA</span><span>PRODUTIVIDADE</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_07</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">SISTEMA WEB <span>02 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_08</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">SISTEMA WEB <span>03 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_09</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">SISTEMA WEB <span>04 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_10</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">SISTEMA WEB <span>05 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                </div>
+            </section>
+            <section class="project-category" id="web-tools" aria-labelledby="web-tools-title">
+                <div class="project-category-heading"><h3 id="web-tools-title">Ferramenta web</h3></div>
+                <div class="project-grid" tabindex="0" aria-label="Ferramentas web. Arraste ou use as setas para navegar.">
+                    <article class="project-card">
+                        <a class="project-image project-image--microsoft" href="#contato" aria-label="Conheça o corretor ortográfico">
+                            <img src="img/corretor%20ortografico.png" alt="Ferramenta de correção ortográfica">
+                            <span class="project-number">PROJECT_11</span><span class="project-open">↗</span>
+                        </a>
+                        <div class="project-info"><div class="project-type">FERRAMENTA WEB <span>01 — 05</span></div><span class="project-status project-status--development">Desenvolvimento</span><h3>Corretor ortográfico</h3><p>Ferramenta de produtividade e auxílio ortográfico, criada para integração com o Justitia Pilot.</p><div class="tag-list"><span>FERRAMENTA</span><span>INTEGRAÇÃO</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_12</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">FERRAMENTA WEB <span>02 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_13</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">FERRAMENTA WEB <span>03 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_14</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">FERRAMENTA WEB <span>04 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                    <article class="project-card project-card--empty">
+                        <div class="project-image project-image--placeholder" aria-hidden="true"><span class="project-number">PROJECT_15</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-info"><div class="project-type">FERRAMENTA WEB <span>05 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                    </article>
+                </div>
+            </section>
         </section>
 
         <section class="skills section-shell" id="habilidades">
@@ -350,6 +380,9 @@
         const menuToggle = document.querySelector('.menu-toggle');
         const sidebar = document.querySelector('.sidebar');
         const navLinks = document.querySelectorAll('.nav-link');
+        const projectNavGroup = document.querySelector('.nav-group');
+        const projectSubnav = projectNavGroup.querySelector('.nav-subnav');
+        const projectsSection = document.querySelector('#projetos');
 
         const setActiveLink = (activeLink) => {
             navLinks.forEach((link) => {
@@ -392,9 +425,13 @@
 
             const isAtPageEnd = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
             const marker = window.innerHeight * 0.4;
+            const projectBounds = projectsSection.getBoundingClientRect();
+            const isInProjects = projectBounds.top <= marker && projectBounds.bottom > marker;
+            projectNavGroup.classList.toggle('is-projects-visible', isInProjects);
+            projectSubnav.setAttribute('aria-hidden', String(!isInProjects));
             const currentSection = isAtPageEnd
                 ? sections[sections.length - 1]
-                : sections.find(({ section }) => {
+                : sections.slice().reverse().find(({ section }) => {
                     const bounds = section.getBoundingClientRect();
                     return bounds.top <= marker && bounds.bottom > marker;
                 });
@@ -427,19 +464,21 @@
         const revealItems = document.querySelectorAll('.scroll-reveal');
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        const projectGrid = document.querySelector('.project-grid');
-        const projectCards = [...projectGrid.querySelectorAll('.project-card')];
+        const projectGrids = [...document.querySelectorAll('.project-grid')];
         let projectDragStart = null;
         let suppressProjectClick = false;
 
-        projectGrid.addEventListener('pointerdown', (event) => {
-            if (event.pointerType !== 'mouse' || event.button !== 0) return;
-            projectDragStart = {
-                pointerId: event.pointerId,
-                startX: event.clientX,
-                scrollLeft: projectGrid.scrollLeft,
-                moved: false
-            };
+        projectGrids.forEach((projectGrid) => {
+            projectGrid.addEventListener('pointerdown', (event) => {
+                if (event.pointerType !== 'mouse' || event.button !== 0) return;
+                projectDragStart = {
+                    grid: projectGrid,
+                    pointerId: event.pointerId,
+                    startX: event.clientX,
+                    scrollLeft: projectGrid.scrollLeft,
+                    moved: false
+                };
+            });
         });
 
         window.addEventListener('pointermove', (event) => {
@@ -448,8 +487,8 @@
 
             if (Math.abs(distance) > 5) {
                 projectDragStart.moved = true;
-                projectGrid.classList.add('is-dragging');
-                projectGrid.scrollLeft = projectDragStart.scrollLeft - distance;
+                projectDragStart.grid.classList.add('is-dragging');
+                projectDragStart.grid.scrollLeft = projectDragStart.scrollLeft - distance;
                 event.preventDefault();
             }
         });
@@ -457,8 +496,8 @@
         const finishProjectDrag = (event) => {
             if (!projectDragStart || event.pointerId !== projectDragStart.pointerId) return;
             suppressProjectClick = projectDragStart.moved;
+            projectDragStart.grid.classList.remove('is-dragging');
             projectDragStart = null;
-            projectGrid.classList.remove('is-dragging');
 
             if (suppressProjectClick) {
                 window.setTimeout(() => {
@@ -469,39 +508,44 @@
 
         window.addEventListener('pointerup', finishProjectDrag);
         window.addEventListener('pointercancel', finishProjectDrag);
-        projectGrid.addEventListener('click', (event) => {
-            if (!suppressProjectClick) return;
-            event.preventDefault();
-            event.stopPropagation();
-            suppressProjectClick = false;
-        }, true);
+        projectGrids.forEach((projectGrid) => {
+            projectGrid.addEventListener('click', (event) => {
+                if (!suppressProjectClick) return;
+                event.preventDefault();
+                event.stopPropagation();
+                suppressProjectClick = false;
+            }, true);
+        });
 
         if (!prefersReducedMotion && 'IntersectionObserver' in window) {
             document.querySelectorAll('.project-card, .skill-card, .knowledge-item').forEach((item, index) => {
                 item.style.setProperty('--reveal-delay', `${index % 3 * 100}ms`);
             });
 
-            projectCards.forEach((card, index) => {
-                card.style.setProperty('--project-index', String(index));
-                card.style.setProperty('--stack-delay', `${index * 36}ms`);
-                card.style.setProperty('--expand-delay', `${index * 250}ms`);
-            });
-            projectGrid.classList.add('project-grid--animation-ready');
-
-            const projectObserver = new IntersectionObserver((entries) => {
-                if (!entries.some((entry) => entry.isIntersecting)) return;
-                const firstCardLeft = projectCards[0].offsetLeft;
+            projectGrids.forEach((projectGrid) => {
+                const projectCards = [...projectGrid.querySelectorAll('.project-card')];
                 projectCards.forEach((card, index) => {
-                    card.style.setProperty('--stacked-position', `${firstCardLeft - card.offsetLeft}px`);
-                    card.style.setProperty('--folder-position', `${Math.min(index, 10) * 7}px`);
-                    card.style.zIndex = String(projectCards.length - index);
+                    card.style.setProperty('--project-index', String(index));
+                    card.style.setProperty('--stack-delay', `${index * 36}ms`);
+                    card.style.setProperty('--expand-delay', `${index * 250}ms`);
                 });
-                projectGrid.classList.add('is-started');
-                window.setTimeout(() => projectGrid.classList.add('is-stacked'), 800);
-                window.setTimeout(() => projectGrid.classList.add('is-expanded'), 2250);
-                projectObserver.disconnect();
-            }, { threshold: 0.2 });
-            projectObserver.observe(projectGrid);
+                projectGrid.classList.add('project-grid--animation-ready');
+
+                const projectObserver = new IntersectionObserver((entries) => {
+                    if (!entries.some((entry) => entry.isIntersecting)) return;
+                    const firstCardLeft = projectCards[0].offsetLeft;
+                    projectCards.forEach((card, index) => {
+                        card.style.setProperty('--stacked-position', `${firstCardLeft - card.offsetLeft}px`);
+                        card.style.setProperty('--folder-position', `${Math.min(index, 10) * 7}px`);
+                        card.style.zIndex = String(projectCards.length - index);
+                    });
+                    projectGrid.classList.add('is-started');
+                    window.setTimeout(() => projectGrid.classList.add('is-stacked'), 800);
+                    window.setTimeout(() => projectGrid.classList.add('is-expanded'), 2250);
+                    projectObserver.disconnect();
+                }, { threshold: 0.2 });
+                projectObserver.observe(projectGrid);
+            });
 
             const revealObserver = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {

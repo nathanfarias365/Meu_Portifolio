@@ -120,6 +120,12 @@
             <section class="project-category" id="web-design" aria-labelledby="web-design-title">
                 <div class="project-category-heading"><h3 id="web-design-title">Web designer</h3></div>
                 <div class="project-grid" tabindex="0" aria-label="Projetos de web design. Arraste ou use as setas para navegar.">
+<!--cores de status de projeto: 
+    - project-status--inactive
+    - iproject-status--development
+    - fproject-status--finished
+    - project-status--discarded
+-->
                     <article class="project-card">
                         <div class="project-image">
                             <img src="img/site%20empresarial.jpg" alt="Apresentação responsiva de um site empresarial">
@@ -129,10 +135,10 @@
                     </article>
                     <article class="project-card project-card--empty">
                         <div class="project-image project-image--placeholder"><img class="project-image-slot" src="img/FlowReservas.png" alt="Tela do projeto FlowReservas"><span class="project-number">PROJECT_02</span><span class="project-placeholder-icon">+</span></div>
-                        <div class="project-info"><div class="project-type">WEB DESIGN <span>02 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>FlowReservas</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
+                        <div class="project-info"><div class="project-type">WEB DESIGN <span>02 — 05</span></div><span class="project-status project-status--finished">Finalizado</span><h3>FlowReservas</h3><p>Modelo de site de reservas de viagens e hospedagens online.</p><div class="tag-list"><span>UI DESIGN</span></div></div>
                     </article>
                     <article class="project-card project-card--empty">
-                        <div class="project-image project-image--placeholder"><img class="project-image-slot" src="/img/corretor ortografico.png" alt="tela do projeto flowrservas"><span class="project-number">PROJECT_03</span><span class="project-placeholder-icon">+</span></div>
+                        <div class="project-image project-image--placeholder"><img class="project-image-slot" alt="tela do projeto flowrservas"><span class="project-number">PROJECT_03</span><span class="project-placeholder-icon">+</span></div>
                         <div class="project-info"><div class="project-type">WEB DESIGN <span>03 — 05</span></div><span class="project-status project-status--inactive">Inativo</span><h3>Em Breve...</h3><p>[em planejamento~]</p><div class="tag-list"><span>PERSONALIZÁVEL</span></div></div>
                     </article>
                     <article class="project-card project-card--empty">
@@ -496,7 +502,7 @@
         // Nos cards sem imagem, preencha o src da tag project-image-slot e o respectivo alt.
         const projectDetailsById = {
             PROJECT_01: { previewUrl: '', repositoryUrl: '', prompt: '' },
-            PROJECT_02: { previewUrl: '', repositoryUrl: '', prompt: '' },
+            PROJECT_02: { previewUrl: 'https://nathanfarias365.github.io/hospedagens-e-viagens/', repositoryUrl: 'https://github.com/nathanfarias365/hospedagens-e-viagens.git', prompt: '' },
             PROJECT_03: { previewUrl: '', repositoryUrl: '', prompt: '' },
             PROJECT_04: { previewUrl: '', repositoryUrl: '', prompt: '' },
             PROJECT_05: { previewUrl: '', repositoryUrl: '', prompt: '' },
